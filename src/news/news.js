@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
-import {DrawerLayoutAndroid, StyleSheet, Text, ToolbarAndroid, View} from 'react-native';
+import {DrawerLayoutAndroid, Image, StyleSheet, Text, ToolbarAndroid, View} from 'react-native';
 import SplashScreen from "react-native-splash-screen";
 import DrawerPanel from "../drawer/drawerPanel";
+import RequestUtil from "../util/RequestUtil";
+import Swiper from "react-native-swiper";
+import APIs from "../util/service";
 
 
 /**
@@ -16,10 +19,10 @@ export default class News extends Component<Props> {
 
     constructor(props) {
         super(props);
-    }
-
-    componentDidMount() {
-        SplashScreen.hide();  //隐藏启动屏
+        this.state = {
+            bannerArr: "",
+            tabName: "",
+        };
     }
 
     render() {
@@ -39,11 +42,52 @@ export default class News extends Component<Props> {
                         titleColor={'#4A4A4A'}
                         style={styles.toobar}
                     />
+                    <View style={styles.wrapper}>
+                        {this.renderBanner()}
+                    </View>
 
                     <Text>许可</Text>
                 </View>
             </DrawerLayoutAndroid>
         );
+    }
+
+    /**
+     * 加载banner图
+     * */
+    renderBanner() {
+        let arr = [];
+        if (this.state.bannerArr.code === 1) {
+            for (let i = 0; i < this.state.bannerArr.data.length; i++) {
+                let url = this.state.bannerArr.data[i].img;
+                arr.push(
+                    <Image
+                        key={i}
+                        resizeMode="cover"
+                        style={styles.bannerImage}
+                        source={{uri: url.indexOf('http') === 0 ? `${url}` : `http://${url}`}}
+                    />
+                )
+            }
+
+            return (
+                <Swiper
+                    style={styles.wrapper}
+                    height={140}
+                    autoplay={true}
+                    autoplayTimeout={4}
+                    dot={<View style={styles.bannerDot}/>}
+                    activeDot={<View style={styles.bannerActiveDot}/>}
+                    paginationStyle={{bottom: 6}}
+                    loop>
+                    {arr}
+                </Swiper>
+            );
+        } else {
+            return (
+                RequestUtil.loading
+            );
+        }
     }
 
 
@@ -63,6 +107,45 @@ export default class News extends Component<Props> {
         this.drawer.openDrawer();
     }
 
+    componentDidMount() {
+        SplashScreen.hide();  //隐藏启动屏
+        this.getBannerData();
+    }
+
+    /**
+     * 获取头部的轮播图
+     * */
+    getBannerData() {
+        var that = this;
+        /**
+         * 获取banner广告轮播
+         * */
+        RequestUtil.getRequest(APIs.getTestBanner,
+            function (data) {
+                //成功回调
+                that.setState({
+                    bannerArr: data
+                })
+            }, function (error) {
+                alert(error)
+            });
+
+        /**
+         * 获取文章类别
+         * */
+        RequestUtil.getRequest(APIs.getTestArticleType,
+            function (data) {
+                //成功回调
+                that.setState({
+                    tabName: data
+                })
+            }, function (error) {
+                alert(error)
+            })
+
+
+    }
+
 }
 
 
@@ -76,6 +159,32 @@ const styles = StyleSheet.create({
     toobar: {
         backgroundColor: '#FFFFFF',
         height: 56
+    },
+    //首页轮播图
+    wrapper: {
+        width: RequestUtil.windowSize.width,
+        height: 140
+    },
+    //轮播默认小圆点
+    bannerDot: {
+        backgroundColor: '#9B9B9B',
+        width: 10,
+        height: 2,
+        borderRadius: 0,
+        margin: 3
+    },
+    //轮播选中小圆点
+    bannerActiveDot: {
+        backgroundColor: '#FFFFFF',
+        width: 10,
+        height: 2,
+        borderRadius: 0,
+        margin: 3
+    },
+    //轮播图片
+    bannerImage: {
+        flex: 1,
+        width: RequestUtil.windowSize.width,
     },
 
 });
