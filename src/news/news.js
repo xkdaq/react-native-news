@@ -41,7 +41,7 @@ export default class News extends Component<Props> {
                     <ToolbarAndroid
                         navIcon={drawer}
                         onIconClicked={this.onOpenDrawer.bind(this)}
-                        title={'News'}
+                        title={'新闻'}
                         titleColor={'#4A4A4A'}
                         style={styles.toobar}
                     />
@@ -115,7 +115,7 @@ export default class News extends Component<Props> {
                     renderTabBar={() => <ScrollableTabBar/>}
                     tabBarBackgroundColor="#ffffff"
                     tabBarUnderlineStyle={styles.tabBarUnderline}
-                    tabBarActiveTextColor="#3e9ce9"
+                    tabBarActiveTextColor="#7CCDBB"
                     tabBarInactiveTextColor="#aaaaaa">
                     {tabNameList}
                 </ScrollableTabView>
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
 
     //tab的下划线
     tabBarUnderline: {
-        backgroundColor: '#3e9ce9',
+        backgroundColor: '#7CCDBB',
         height: 2
     }
 

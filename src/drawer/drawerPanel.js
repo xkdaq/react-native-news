@@ -4,11 +4,12 @@ import {Dimensions, Image, StyleSheet, Text, TouchableOpacity, View} from 'react
 
 const headerImg = require('./../res/drawable/img_header.png');
 const photoImg = require('./../res/drawable/img_default_photo.png');
-const news = require('./../res/drawable/icon_menu_news.png');
-const market = require('./../res/drawable/icon_menu_market.png');
-const setting = require('./../res/drawable/icon_menu_setting.png');
-const about = require('./../res/drawable/icon_menu_about.png');
-const out = require('./../res/drawable/icon_menu_out.png');
+
+const news = require('./../res/drawable/icon_news.png');
+const market = require('./../res/drawable/icon_yule.png');
+const setting = require('./../res/drawable/icon_setting.png');
+const about = require('./../res/drawable/icon_about.png');
+
 const right = require('./../res/drawable/icon_menu_right.png');
 
 const {height, width} = Dimensions.get('window');
@@ -35,9 +36,9 @@ export default class DrawerPanel extends Component {
                         alignItems: 'center'
                     }}>
                         <Image source={photoImg}/>
-                        <Text style={{color: 'white', marginTop: 8}}>Login to make great remarks</Text>
+                        <Text style={{color: 'white', marginTop: 8}}>会唱情歌小猴子</Text>
                         <TouchableOpacity style={styles.loginBtn}>
-                            <Text style={{color: 'white', fontSize: 10}}>login</Text>
+                            <Text style={{color: 'white', fontSize: 10}}>登录</Text>
                         </TouchableOpacity>
 
                     </View>
@@ -47,11 +48,10 @@ export default class DrawerPanel extends Component {
                     height: height,
                     backgroundColor: 'white'
                 }}>
-                    {this.renderItem(news, 'News')}
-                    {this.renderItem(market, 'Market')}
-                    {this.renderItem(setting, 'Setting')}
-                    {this.renderItem(about, 'About')}
-                    {this.renderItem(out, 'Log out')}
+                    {this.renderItem(news, '新闻')}
+                    {this.renderItem(market, '娱乐')}
+                    {this.renderItem(setting, '设置')}
+                    {this.renderItem(about, '关于')}
                 </View>
             </View>
         )
