@@ -1,6 +1,7 @@
 import React from "react";
 import {StackNavigator} from "react-navigation";
 import News from "./news/news";
+import NewsDetail from "./news/newsdetail";
 
 
 const RootStack = StackNavigator(
@@ -12,15 +13,20 @@ const RootStack = StackNavigator(
             })
         },
 
+        NewsDetail: {
+            screen: NewsDetail,
+            navigationOptions: {title: "News"}
+        },
+
         //...
 
     },
 
     {
         navigationOptions: {
-            headerTintColor: "#fff",
+            headerTintColor: "#4A4A4A",
             headerStyle: {
-                backgroundColor: "#23a2f2"
+                backgroundColor: "#ffffff"
             }
         }
     },
