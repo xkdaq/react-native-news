@@ -1,7 +1,3 @@
-react-native混合开发新闻类app
-
-react-native混合开发新闻类app
-
 ### 一、运行环境
 
 - react: 16.6.0-alpha.8af6728
@@ -31,4 +27,20 @@ github: https://github.com/crazycodeboy/react-native-splash-screen/blob/master/R
 参考资料:  
 react-native中文网:  
 https://reactnative.cn/docs/drawerlayoutandroid/  
-https://reactnative.cn/docs/toolbarandroid/
+https://reactnative.cn/docs/toolbarandroid/  
+
+- 4.[react-native-swiper](https://github.com/leecade/react-native-swiper "react-native-swiper") 轮播图
+
+参考资料:  
+简书:https://www.jianshu.com/p/f42b0c13710e  
+
+- 5.[ActivityIndicator](https://reactnative.cn/docs/activityindicator/ "ActivityIndicator") 加载框loading
+
+参考资料:  
+react-native中文网:https://reactnative.cn/docs/activityindicator/
+
+- 6.[react-native-scrollable-tab-view](https://github.com/ptomasroos/react-native-scrollable-tab-view "react-native-scrollable-tab-view") tab切换,类似Android平台的TabLayout
+
+参考资料:  
+1.网上全是写死的tab,这里需要通过及接口获取tab集合动态添加tab的个数,具体参考项目  
+2.之后有时间单独再写一个demo(2018.10.27)  

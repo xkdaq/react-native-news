@@ -5,6 +5,7 @@ import DrawerPanel from "../drawer/drawerPanel";
 import RequestUtil from "../util/RequestUtil";
 import Swiper from "react-native-swiper";
 import APIs from "../util/service";
+import ScrollableTabView, {ScrollableTabBar} from 'react-native-scrollable-tab-view'
 
 
 /**
@@ -35,6 +36,7 @@ export default class News extends Component<Props> {
                 drawerPosition={DrawerLayoutAndroid.positions.left}
                 renderNavigationView={() => this.renderNavigationView()}>
                 <View style={styles.content}>
+                    {/*导航栏*/}
                     <ToolbarAndroid
                         navIcon={drawer}
                         onIconClicked={this.onOpenDrawer.bind(this)}
@@ -42,11 +44,14 @@ export default class News extends Component<Props> {
                         titleColor={'#4A4A4A'}
                         style={styles.toobar}
                     />
+                    {/*轮播图*/}
                     <View style={styles.wrapper}>
                         {this.renderBanner()}
                     </View>
-
-                    <Text>许可</Text>
+                    {/*tab及新闻列表*/}
+                    <View style={{flex: 1}}>
+                        {this.renderTabView()}
+                    </View>
                 </View>
             </DrawerLayoutAndroid>
         );
@@ -83,6 +88,38 @@ export default class News extends Component<Props> {
                     {arr}
                 </Swiper>
             );
+        } else {
+            return (
+                RequestUtil.loading
+            );
+        }
+    }
+
+    /**
+     * 加载tablayout
+     * */
+    renderTabView() {
+        let tabNameList = [];
+        if (this.state.tabName.code === 1) {
+            var data = this.state.tabName.data;
+            tabNameList.push(
+                data.map((news, i) => {
+                    return (<View key={i} tabLabel={news.title}>
+                        <Text>{news.title}</Text>
+                    </View>)
+                })
+            );
+            return (
+                <ScrollableTabView
+                    renderTabBar={() => <ScrollableTabBar/>}
+                    tabBarBackgroundColor="#ffffff"
+                    tabBarUnderlineStyle={styles.tabBarUnderline}
+                    tabBarActiveTextColor="#3e9ce9"
+                    tabBarInactiveTextColor="#aaaaaa">
+                    {tabNameList}
+                </ScrollableTabView>
+            );
+
         } else {
             return (
                 RequestUtil.loading
@@ -186,5 +223,12 @@ const styles = StyleSheet.create({
         flex: 1,
         width: RequestUtil.windowSize.width,
     },
+
+
+    //tab的下划线
+    tabBarUnderline: {
+        backgroundColor: '#3e9ce9',
+        height: 2
+    }
 
 });
