@@ -7,7 +7,7 @@
 ### 二、截图
 
 <center class="half">
-    <img  style="margin:10px" src="https://raw.githubusercontent.com/xkdaq/react-native-news/master/screenshot/0.png" >
+    <img  style="margin:10px" src="https://raw.githubusercontent.com/xkdaq/react-native-news/master/screenshot/00.png" >
 </center>
 
 
