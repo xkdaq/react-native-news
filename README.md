@@ -7,7 +7,7 @@
 ### 二、截图
 
 <center class="half">
-    <img  style="margin:10px" src="https://raw.githubusercontent.com/xkdaq/react-native-news/master/screenshot/1.png" width="243" height="432" ><img style="margin:10px"  src="https://raw.githubusercontent.com/xkdaq/react-native-news/master/screenshot/2.png" width="243" height="432" ><img style="margin:10px"  src="https://raw.githubusercontent.com/xkdaq/react-native-news/master/screenshot/3.png" width="243" height="432" ><img style="margin:10px"  src="https://raw.githubusercontent.com/xkdaq/react-native-news/master/screenshot/4.png" width="243" height="432" >
+    <img  style="margin:10px" src="https://raw.githubusercontent.com/xkdaq/react-native-news/master/screenshot/0.png" >
 </center>
 
 
