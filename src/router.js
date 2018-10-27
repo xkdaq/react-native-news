@@ -3,7 +3,6 @@ import {StackNavigator} from "react-navigation";
 import News from "./news/news";
 import NewsDetail from "./news/newsdetail";
 
-
 const RootStack = StackNavigator(
     {
         News: {
@@ -12,14 +11,10 @@ const RootStack = StackNavigator(
                 header: null
             })
         },
-
         NewsDetail: {
             screen: NewsDetail,
-            navigationOptions: {title: "News"}
+            navigationOptions: {title: "新闻详情"}
         },
-
-        //...
-
     },
 
     {

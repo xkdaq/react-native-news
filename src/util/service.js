@@ -18,6 +18,11 @@ let APIS = {
      * */
     getNewsList: TestURL,
 
+    /**
+     * 获取新闻详情
+     * */
+    getNewsDetail: TestURL,
+
 };
 
 module.exports = APIS;

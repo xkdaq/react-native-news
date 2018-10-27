@@ -45,7 +45,9 @@ export default class NewsList extends React.Component {
      * 渲染item
      * */
     _renderRow(news) {
-        return <NewsItem news={news} onPress={() => this.props.navigation.navigate('NewsDetail', {newid: 'detail'})}/>
+        return <NewsItem news={news} onPress={() => {
+            this.props.navigation.navigate('NewsDetail', {xuke: 'news_detail'})
+        }}/>
     }
 
     /**
