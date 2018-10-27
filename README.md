@@ -30,5 +30,5 @@ github: https://github.com/crazycodeboy/react-native-splash-screen/blob/master/R
 
 参考资料:  
 react-native中文网:  
-https://reactnative.cn/docs/drawerlayoutandroid/
+https://reactnative.cn/docs/drawerlayoutandroid/  
 https://reactnative.cn/docs/toolbarandroid/
