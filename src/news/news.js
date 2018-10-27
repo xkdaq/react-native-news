@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import {DrawerLayoutAndroid, Image, StyleSheet, Text, ToolbarAndroid, View} from 'react-native';
+import {DrawerLayoutAndroid, Image, StyleSheet, ToolbarAndroid, View} from 'react-native';
 import SplashScreen from "react-native-splash-screen";
 import DrawerPanel from "../drawer/drawerPanel";
 import RequestUtil from "../util/RequestUtil";
 import Swiper from "react-native-swiper";
 import APIs from "../util/service";
 import ScrollableTabView, {ScrollableTabBar} from 'react-native-scrollable-tab-view'
+import NewsList from "./newslist";
 
 
 /**
@@ -105,7 +106,7 @@ export default class News extends Component<Props> {
             tabNameList.push(
                 data.map((news, i) => {
                     return (<View key={i} tabLabel={news.title}>
-                        <Text>{news.title}</Text>
+                        <NewsList key={i} news={news} navigation={this.props.navigation}/>
                     </View>)
                 })
             );
