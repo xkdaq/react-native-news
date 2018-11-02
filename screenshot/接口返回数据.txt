@@ -1,0 +1,203 @@
+﻿
+
+
+
+////////////////////////轮播图 v0.2
+
+http://www.wanandroid.com/tools/mockapi/1189/getBanner
+
+{
+    "code": 1,
+    "msg": "Success",
+    "data": [
+        {
+            "id": 1,
+            "name": "test",
+            "url": "www.baidu.com",
+            "img": "https://photo-cdn.icons8.com/assets/previews/103/427dfc7b-a86d-4480-8831-82d14a2d9f601x.jpg",
+            "type": "1",
+            "sort": 22,
+            "addtime": "1970-01-15 14:56:04 ",
+            "endtime": "1970-01-15 14:52:01 ",
+            "status": 1,
+            "content": "erewe"
+        },
+        {
+            "id": 2,
+            "name": "test",
+            "url": "www.baidu.com",
+            "img": "https://photo-cdn.icons8.com/assets/previews/291/5acaadd1-3cc0-41fc-aada-fcfb25b8be801x.jpg",
+            "type": "1",
+            "sort": 22,
+            "addtime": "1970-01-15 14:56:04 ",
+            "endtime": "1970-01-15 14:52:01 ",
+            "status": 1,
+            "content": "erewe"
+        },
+        {
+            "id": 3,
+            "name": "test",
+            "url": "www.baidu.com",
+            "img": "https://photo-cdn.icons8.com/assets/previews/624/3cd5202d-22cf-4058-82fe-aeaaaf6fc33c1x.jpg",
+            "type": "1",
+            "sort": 22,
+            "addtime": "1970-01-15 14:56:04 ",
+            "endtime": "1970-01-15 14:52:01 ",
+            "status": 1,
+            "content": "erewe"
+        },
+        {
+            "id": 4,
+            "name": "test",
+            "url": "www.baidu.com",
+            "img": "https://photo-cdn.icons8.com/assets/previews/803/e76cecc8-7753-4824-97e6-179c529187571x.jpg",
+            "type": "1",
+            "sort": 22,
+            "addtime": "1970-01-15 14:56:04 ",
+            "endtime": "1970-01-15 14:52:01 ",
+            "status": 1,
+            "content": "erewe"
+        },
+        {
+            "id": 5,
+            "name": "测试广告啊",
+            "url": "https://photo-cdn.icons8.com/assets/previews/349/4d272dc6-47a5-4c3b-86d3-e70ff32f52441x.jpg",
+            "img": "https://photo-cdn.icons8.com/assets/previews/349/4d272dc6-47a5-4c3b-86d3-e70ff32f52441x.jpg",
+            "type": "1",
+            "sort": 44,
+            "addtime": "2018-10-23 00:00:00 ",
+            "endtime": "2018-10-23 00:00:00 ",
+            "status": 1,
+            "content": "测试广告啊"
+        }
+    ]
+}
+
+
+
+/////////////////新闻类别  v0.2
+
+http://www.wanandroid.com/tools/mockapi/1189/getArticleType
+
+{
+    "code": 1,
+    "msg": "Success",
+    "data": [
+        {
+			"id": 1,
+            "name": "news",
+            "title": "新闻",
+            "img": "https://koinrocketid.oss-ap-southeast-5.aliyuncs.com/Upload/ad/5bd1272fbce9e.jpg",
+            "status": 1,
+            "content": "哈哈哈哈哈哈哈哈哈哈"
+        },
+		{
+			"id": 2,
+            "name": "news",
+            "title": "热门",
+            "img": "https://koinrocketid.oss-ap-southeast-5.aliyuncs.com/Upload/ad/5bd1272fbce9e.jpg",
+            "status": 1,
+            "content": "啊啊啊啊啊啊啊啊啊啊"
+        },
+		{
+			"id": 3,
+            "name": "music",
+            "title": "音乐",
+            "img": "https://koinrocketid.oss-ap-southeast-5.aliyuncs.com/Upload/ad/5bd1272fbce9e.jpg",
+            "status": 1,
+            "content": "啊啊啊啊啊啊啊啊啊啊"
+        },
+		{
+			"id": 4,
+            "name": "read",
+            "title": "阅读",
+            "img": "https://koinrocketid.oss-ap-southeast-5.aliyuncs.com/Upload/ad/5bd1272fbce9e.jpg",
+            "status": 1,
+            "content": "哦哦哦哦哦哦哦哦哦"
+        }
+
+    ]
+}
+
+
+/////////////////////////////////新闻列表 v0.2
+
+http://www.wanandroid.com/tools/mockapi/1189/{name}
+
+{
+    "code": 1,
+    "msg": "Success",
+    "data": [
+        {
+			"id": 1,
+            "name": "news",
+            "title": "兰海说 | 孩子哭闹撒泼时，如何拒绝他的无理要求？",
+			"type":"#xuke",
+			"time":"2018/10/26",
+            "img": "https://photo-cdn.icons8.com/assets/previews/528/b32d052c-2343-4caf-bddc-e7839d8836651x.jpg",
+            "status": 1,
+            "content": "哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"
+        },
+		{
+			"id": 2,
+            "name": "news",
+            "title": "3300毫升！哈尔滨高龄产妇流出全身70%的血，产下一个'10分'宝宝！",
+			"type":"#Grantyoga",
+			"time":"2018/10/25",
+            "img": "https://photo-cdn.icons8.com/assets/previews/764/c20f7bc1-d0bf-44d8-85df-3dd50faf6b941x.jpg",
+            "status": 1,
+            "content": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+        },
+		{
+			"id": 3,
+            "name": "news",
+            "title": "伊能静怒怼网友：想当一个好妈妈，为什么这么难？",
+			"type":"#Haha",
+			"time":"2018/10/25",
+            "img": "https://photo-cdn.icons8.com/assets/previews/832/f524c807-3184-4ffa-a838-63d80d79497a1x.jpg",
+            "status": 1,
+            "content": "哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦哦"
+        },
+		{
+			"id": 4,
+            "name": "news",
+            "title": "拿什么拯救你，我的叛逆磨人精？,富养大的穷孩子，人生要有多悲哀",
+			"type":"#Steven",
+			"time":"2018/10/26",
+            "img": "https://photo-cdn.icons8.com/assets/previews/735/ec2d015c-14f8-4b6d-8ace-7aa9d9718aec1x.jpg",
+            "status": 1,
+            "content": "哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇哇 "
+        },
+		{
+			"id": 5,
+            "name": "news",
+            "title": "宝宝肚子胀，这4大消退法最快！",
+			"type":"#Steven",
+			"time":"2018/10/26",
+            "img": "https://photo-cdn.icons8.com/assets/previews/73/b5d4408e-a036-4bee-9eb8-a2df3c4834261x.jpg",
+            "status": 1,
+            "content": "嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯"
+        }
+
+    ]
+}
+
+
+/////////////////新闻详情  v0.2
+
+http://www.wanandroid.com/tools/mockapi/1189/news_detail
+
+{
+    "code": 1,
+    "msg": "Success",
+    "data": {
+		"id": 1,
+		"name": "news",
+		"title": "70岁老奶奶教你怎么在阳台上种植蔬菜，阳台上种菜的方法介绍",
+		"type":"#Grantyoga",
+		"time":"2018/10/26",
+		"img": "https://koinrocketid.oss-ap-southeast-5.aliyuncs.com/Upload/ad/5bd12b25e7c89.jpg",
+		"status": 1,
+		"content": "<p>其实，一段婚姻中，真正会影响到夫妻关系的除了夫妻双方的交流，还有一点便是公婆的影响了。最近在看部网剧《颤抖吧阿部2》，里面对于感情价值观就有很明确的道理。</p><p><strong>太爱计较的婆婆和对象，注定相处的不好。</strong></p><p>剧中的朵喵喵和齐大娘，虽然不是血缘上的母子，但情感的纽带一点也不弱。</p><p>齐大娘因为觉得对儿子朵喵喵付出的太多，便想用这些来捆绑儿子，当对儿子女朋友小八不满意时，她选择的不是自由听取儿子的意见，而是用管教的方式让朵喵喵陷入两难的境地。</p><p>因为小八一直把自己给朵喵喵的水倒掉，齐大娘强烈拒绝儿子跟她在一起，并说\"这就是娶了个奶奶进门“。在没得到儿子附和自己的答案之后，便开始用爱的责任开始说教。</p><p><img src=\"http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/1018/011E683A63BB837C235D4F969F627803C9D6CA5E_size416_w1000_h1688.jpeg\"></p><p>现实生活中大多数家庭也会这样，因为和媳妇的基础矛盾，就会把小事变大，非要寻求儿子的对错判断，甚至还会上升到养育孝道方面。</p><p>因为儿子心软摇摆不定不懂得处理，最后只能是这种两个女人同抢一件宝物的疯狂场面。</p><p><img src=\"http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/1018/EB4F93A7EABD229A96418B97A131AC82A23A6FDB_size504_w1000_h2250.jpeg\"></p><p>甚至还会上演\“妈跟女朋友同时掉进水里，你会先救谁\”的戏码。</p><p>两边都是自己爱的人，朵喵喵就跟大多数人一样，总是在两者之间徘徊两难，令人头痛。</p><p><img src=\"http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/1018/158F3D85AD0962B1586DAF3C1EE8188C00066061_size575_w1000_h2250.jpeg\"></p><p>﹏﹏﹏﹏</p><p>这也是很多误会的开始。齐大娘因为某些原因突然变得疯疯癫癫，在凶朵喵喵的时候，小八出手阻止，结果却被朵喵喵训斥。</p><p>只要齐大娘一句“不要她”，朵喵喵就会开始伤害小八。</p><p><img src=\"http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/1018/3F9425045E768CCF06FF74D0E77B8AC85B47938A_size590_w1000_h2813.jpeg\"></p><p>明明听人说泻药是解药，却被朵喵喵误会是要伤害他娘。</p><p><img src=\"http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/1018/233E0E6FC54C66BB5E52674467DE171026BD87FC_size330_w1000_h1374.jpeg\"></p><p><strong>有时爱就是这样，越是存在，越是伤害。我们总是会在无意间伤害身边最亲近的人。</strong></p><p><strong>但也正是因为爱，让一切矛盾和伤害化为乌有。</strong></p><p>在朵喵喵听到齐大娘跟府里的管家哥哥在一起之后，第一反应也是愤怒，跟当初他娘一模一样，就好像习惯的陪伴突然被抢走，下意识的就是去抗拒。</p><p><img src=\"http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/1018/A0AF3294450BB94E1856A7A1DF769D3F57C1CA4D_size202_w1000_h887.jpeg\"></p><p>其实，父母爱孩子就是要学会放手，要给他应有的空间，不能让父母的爱变成情感绑架，左右孩子的思想，干涉孩子的生活。</p><p>父母并不能陪孩子走一生，当孩子遇到爱的人时不干涉，喜欢孩子喜欢的，家庭间的相处关系自然就会变得和谐无比。</p><p><img src=\"http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/1018/96310A30354C0678B18CBC653FD5874A36D32741_size283_w1000_h1049.jpeg\"></p><p><img src=\"http://d.ifengimg.com/w600/p0.ifengimg.com/pmop/2018/1018/4726D682F159731B41DA77D0AD9CF54699DE710A_size277_w1000_h1125.jpeg\"></p><p>﹏﹏﹏﹏</p><p>这世上，多少父母以爱的名义要求子女一定要听从自己的话，用自己的观点无限制的控制孩子，其实到最后换来的只能是埋怨和后悔。总有一天，翅膀长全的飞鸟会离开母亲的保护，学会飞行闯荡。我们每个人都将会成长，会有自己的思维和生活方式，会勇敢的追求自己的幸福。当爱变成认同包容，才是生活中最好的相处方式。</p><p><strong>我爱你，但我不用爱来绑架你。</strong></p>"
+	}
+}
