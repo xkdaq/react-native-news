@@ -48,4 +48,3 @@ react-native中文网:https://reactnative.cn/docs/activityindicator/
 
 参考资料:  
 1.网上全是写死的tab,这里需要通过及接口获取tab集合动态添加tab的个数,具体参考项目  
-2.之后有时间单独再写一个demo(2018.10.27)  
